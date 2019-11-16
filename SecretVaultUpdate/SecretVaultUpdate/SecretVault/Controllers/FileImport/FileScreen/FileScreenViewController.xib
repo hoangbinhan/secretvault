@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileScreenViewController" customModule="SecretVault" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDelete" destination="j05-7t-o3f" id="4Ld-4B-zt1"/>
+                <outlet property="btnFileImport" destination="rG8-Wn-RTP" id="ish-D2-Uqj"/>
+                <outlet property="btnImport" destination="rHM-gU-SOp" id="vgR-5z-kQw"/>
+                <outlet property="btnPhotoVault" destination="aP7-Cc-NFe" id="GiL-TL-nVb"/>
+                <outlet property="btnRename" destination="JNJ-uf-LYf" id="ZWr-cZ-fFi"/>
+                <outlet property="collectionView" destination="quF-tf-QqM" id="Bet-BE-GkB"/>
+                <outlet property="stackView" destination="GK4-pm-yMk" id="gkL-iN-Prw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBot" destination="WVR-KB-WPX" id="kcl-pn-7EN"/>
+                <outlet property="viewMid" destination="9GE-Uz-g64" id="Fb1-nw-sf1"/>
+                <outlet property="viewTop" destination="vTU-Xd-ZpX" id="Q5v-Pu-6GU"/>
+                <outletCollection property="arrConstraint" destination="9I7-Ze-Xwk" collectionClass="NSMutableArray" id="SeI-iB-ihe"/>
+                <outletCollection property="arrConstraint" destination="qSu-Ek-Hrf" collectionClass="NSMutableArray" id="8yh-cM-K7O"/>
+                <outletCollection property="arrConstraint" destination="YBH-lH-KOy" collectionClass="NSMutableArray" id="pMC-3A-3Vj"/>
+                <outletCollection property="arrConstraint" destination="uHD-sJ-jjh" collectionClass="NSMutableArray" id="VT7-AT-KS3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTU-Xd-ZpX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-pm-yMk">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-Cc-NFe">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="44"/>
+                                    <state key="normal" title="Photo Vault"/>
+                                    <connections>
+                                        <action selector="PhotoVaultButtonPressed:" destination="-1" eventType="touchUpInside" id="iWq-0d-4mj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG8-Wn-RTP">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="44"/>
+                                    <state key="normal" title="File Import"/>
+                                    <connections>
+                                        <action selector="FileImportButtonPressed:" destination="-1" eventType="touchUpInside" id="J0N-Br-0CH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="9I7-Ze-Xwk"/>
+                        <constraint firstItem="GK4-pm-yMk" firstAttribute="top" secondItem="vTU-Xd-ZpX" secondAttribute="top" id="Rkr-Zm-xam"/>
+                        <constraint firstAttribute="trailing" secondItem="GK4-pm-yMk" secondAttribute="trailing" id="q9E-3T-dhY"/>
+                        <constraint firstAttribute="bottom" secondItem="GK4-pm-yMk" secondAttribute="bottom" id="qSu-Ek-Hrf"/>
+                        <constraint firstItem="GK4-pm-yMk" firstAttribute="leading" secondItem="vTU-Xd-ZpX" secondAttribute="leading" id="rlW-eR-pta"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GE-Uz-g64">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="quF-tf-QqM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6Py-gi-uG8">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVR-KB-WPX">
+                            <rect key="frame" x="177" y="637" width="60" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHM-gU-SOp">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <state key="normal" image="ic_import"/>
+                                    <connections>
+                                        <action selector="ImportButtonPressed:" destination="-1" eventType="touchUpInside" id="pqO-te-443"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="rHM-gU-SOp" secondAttribute="bottom" id="4dP-A2-mZ6"/>
+                                <constraint firstItem="rHM-gU-SOp" firstAttribute="leading" secondItem="WVR-KB-WPX" secondAttribute="leading" id="9TP-Kb-Bds"/>
+                                <constraint firstAttribute="height" constant="60" id="NOH-Ti-jaS"/>
+                                <constraint firstAttribute="width" constant="60" id="OLy-aq-C1e"/>
+                                <constraint firstItem="rHM-gU-SOp" firstAttribute="top" secondItem="WVR-KB-WPX" secondAttribute="top" id="TxV-kY-M1s"/>
+                                <constraint firstAttribute="trailing" secondItem="rHM-gU-SOp" secondAttribute="trailing" id="xtS-jY-ztq"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNJ-uf-LYf">
+                            <rect key="frame" x="20" y="647" width="137" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Bcg-Sx-uDS"/>
+                            </constraints>
+                            <state key="normal" title="Rename"/>
+                            <connections>
+                                <action selector="RenameButtonPressed:" destination="-1" eventType="touchUpInside" id="TDV-U5-VNf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j05-7t-o3f">
+                            <rect key="frame" x="257" y="647" width="137" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Df0-cv-p4y"/>
+                            </constraints>
+                            <state key="normal" title="Delete"/>
+                            <connections>
+                                <action selector="DeleteButtonPressed:" destination="-1" eventType="touchUpInside" id="77X-iO-VkG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="j05-7t-o3f" secondAttribute="trailing" constant="20" id="AL2-qy-epA"/>
+                        <constraint firstItem="quF-tf-QqM" firstAttribute="leading" secondItem="9GE-Uz-g64" secondAttribute="leading" id="C0Y-EE-sKY"/>
+                        <constraint firstAttribute="bottom" secondItem="WVR-KB-WPX" secondAttribute="bottom" constant="77" id="KJ2-e3-QC8"/>
+                        <constraint firstItem="quF-tf-QqM" firstAttribute="top" secondItem="9GE-Uz-g64" secondAttribute="top" id="P0U-a7-Wf4"/>
+                        <constraint firstAttribute="trailing" secondItem="quF-tf-QqM" secondAttribute="trailing" id="POp-Ig-8M4"/>
+                        <constraint firstItem="JNJ-uf-LYf" firstAttribute="centerY" secondItem="rHM-gU-SOp" secondAttribute="centerY" id="VIi-YZ-R2E"/>
+                        <constraint firstAttribute="bottom" secondItem="quF-tf-QqM" secondAttribute="bottom" id="YBH-lH-KOy"/>
+                        <constraint firstItem="WVR-KB-WPX" firstAttribute="centerX" secondItem="9GE-Uz-g64" secondAttribute="centerX" id="eMf-wB-v6c"/>
+                        <constraint firstItem="j05-7t-o3f" firstAttribute="centerY" secondItem="rHM-gU-SOp" secondAttribute="centerY" id="eWD-UE-XXS"/>
+                        <constraint firstItem="WVR-KB-WPX" firstAttribute="leading" secondItem="JNJ-uf-LYf" secondAttribute="trailing" constant="20" id="lbH-Hc-6eH"/>
+                        <constraint firstItem="JNJ-uf-LYf" firstAttribute="leading" secondItem="9GE-Uz-g64" secondAttribute="leading" constant="20" id="mth-QD-soK"/>
+                        <constraint firstItem="j05-7t-o3f" firstAttribute="leading" secondItem="WVR-KB-WPX" secondAttribute="trailing" constant="20" id="pnC-Rb-Vg9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vTU-Xd-ZpX" secondAttribute="trailing" id="IbP-zG-mTl"/>
+                <constraint firstItem="9GE-Uz-g64" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YXS-ty-Ded"/>
+                <constraint firstItem="9GE-Uz-g64" firstAttribute="top" secondItem="vTU-Xd-ZpX" secondAttribute="bottom" id="h1v-OJ-aKV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9GE-Uz-g64" secondAttribute="bottom" id="lrw-H9-WA3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9GE-Uz-g64" secondAttribute="trailing" id="nQK-ZK-BrM"/>
+                <constraint firstItem="vTU-Xd-ZpX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="onw-uX-W0t"/>
+                <constraint firstItem="vTU-Xd-ZpX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uHD-sJ-jjh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="109.29535232383809"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_import" width="60" height="60"/>
+    </resources>
+</document>

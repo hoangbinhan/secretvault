@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoSingleCollectionViewCell" id="gTV-IL-0wX" customClass="PhotoSingleCollectionViewCell" customModule="SecretVault" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="409"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="409"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UBN-yn-pLy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="409"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UBN-yn-pLy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Slk-gh-qB2"/>
+                <constraint firstAttribute="bottom" secondItem="UBN-yn-pLy" secondAttribute="bottom" id="WQ0-ha-Gie"/>
+                <constraint firstAttribute="trailing" secondItem="UBN-yn-pLy" secondAttribute="trailing" id="vDI-v5-bwA"/>
+                <constraint firstItem="UBN-yn-pLy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wRw-E5-bau"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgPhotoSingle" destination="UBN-yn-pLy" id="rbd-fU-8ba"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
