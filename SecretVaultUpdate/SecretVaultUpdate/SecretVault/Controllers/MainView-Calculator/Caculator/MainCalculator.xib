@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainCalculator" customModule="SecretVault" customModuleProvider="target">
+            <connections>
+                <outlet property="AC" destination="3Th-db-LWa" id="r00-gR-JuO"/>
+                <outlet property="Device" destination="dXm-x0-AXw" id="80m-up-3AH"/>
+                <outlet property="Device2" destination="LxK-09-Ywy" id="UyM-Cr-nRw"/>
+                <outlet property="Dot" destination="ztb-gE-pn7" id="aWm-yd-9Dt"/>
+                <outlet property="Eight" destination="nRd-zG-6sJ" id="eOL-nJ-MTh"/>
+                <outlet property="Equal" destination="NkA-Of-fYN" id="6qe-Hv-Mo3"/>
+                <outlet property="Five" destination="hWm-Yu-BSG" id="J66-nL-pNR"/>
+                <outlet property="Four" destination="1b6-ot-5iO" id="QO2-gx-crG"/>
+                <outlet property="Minus" destination="Od8-RA-0ZA" id="TBq-2w-jft"/>
+                <outlet property="Multi" destination="le1-9t-y06" id="KRr-QF-fIv"/>
+                <outlet property="Nine" destination="okX-eU-EtK" id="BCC-Or-tN0"/>
+                <outlet property="One" destination="kt6-Mk-sfC" id="P1f-2g-ml8"/>
+                <outlet property="Plus" destination="x5C-gb-LhX" id="dCL-Ur-QWG"/>
+                <outlet property="PlusMinus" destination="0et-Ey-Ghh" id="CJC-Vd-SIk"/>
+                <outlet property="Seven" destination="VKt-oJ-tcc" id="dLd-Um-0ch"/>
+                <outlet property="Six" destination="kN4-t4-R2a" id="niO-f3-itI"/>
+                <outlet property="Three" destination="GIT-Li-RHu" id="N9S-jr-MZx"/>
+                <outlet property="Two" destination="aqp-sF-ghA" id="sbt-Th-pj7"/>
+                <outlet property="Zero" destination="1Xx-63-MNO" id="lFx-lF-TSZ"/>
+                <outlet property="displayNum" destination="tdW-Ak-aKM" id="u0a-0w-iUn"/>
+                <outlet property="view" destination="eki-vH-vNf" id="GR1-R9-xG4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MainView" id="eki-vH-vNf">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zxw-zO-cKh">
+                    <rect key="frame" x="16.5" y="152.5" width="342" height="496.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-Ak-aKM" userLabel="Display">
+                            <rect key="frame" x="0.0" y="0.0" width="342" height="51.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                            <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-7c-SMs">
+                            <rect key="frame" x="0.0" y="65.5" width="342" height="75"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Th-db-LWa" userLabel="AC">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="4BZ-9r-yfz"/>
+                                        <constraint firstAttribute="height" constant="75" id="UiU-EQ-b4i"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="AC">
+                                        <color key="titleColor" red="0.95378702879999999" green="0.87585818770000001" blue="0.72007638220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clearScreen:" destination="-1" eventType="touchUpInside" id="Chf-j3-COu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0et-Ey-Ghh" userLabel="+/-">
+                                    <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="kxM-jm-Om7"/>
+                                        <constraint firstAttribute="height" constant="75" id="suB-Pp-Qyq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" backgroundImage="- 3">
+                                        <color key="titleColor" red="0.95378702879999999" green="0.87585818770000001" blue="0.72007638220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="invertnum:" destination="-1" eventType="touchUpInside" id="EMd-59-KAd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleAspectFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXm-x0-AXw" userLabel="%">
+                                    <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="OVQ-JA-MZv"/>
+                                        <constraint firstAttribute="height" constant="75" id="tWh-9a-aXy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" backgroundImage="- 4">
+                                        <color key="titleColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="performOperation:" destination="-1" eventType="touchUpInside" id="OGv-BI-3Dl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxK-09-Ywy" userLabel="Divice">
+                                    <rect key="frame" x="267" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.72631593309999998" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="YPs-uO-6hu"/>
+                                        <constraint firstAttribute="width" constant="75" id="gi7-EH-IUr"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Div 2"/>
+                                    <connections>
+                                        <action selector="performOperation:" destination="-1" eventType="touchUpInside" id="1rC-kr-CnY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="tGi-GU-X0h">
+                            <rect key="frame" x="0.0" y="154.5" width="342" height="75"/>
+                            <subviews>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKt-oJ-tcc" userLabel="Number 7">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="HAL-LM-rGH"/>
+                                        <constraint firstAttribute="height" constant="75" id="U7o-Rk-cpg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="7">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="2o6-h2-24Z"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRd-zG-6sJ" userLabel="Number 8">
+                                    <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="A7F-GD-e86"/>
+                                        <constraint firstAttribute="width" constant="75" id="eBg-zg-twF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="8">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="Ebu-WW-Ovh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okX-eU-EtK" userLabel="Number 9">
+                                    <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="6IY-rd-TmU"/>
+                                        <constraint firstAttribute="height" constant="75" id="KWN-Wd-mNJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="9">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="Q4h-3D-LGv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="le1-9t-y06" userLabel="Multi">
+                                    <rect key="frame" x="267" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="d7o-2l-iDl"/>
+                                        <constraint firstAttribute="width" constant="75" id="gFB-Sy-YbB"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Mul 2">
+                                        <attributedString key="attributedTitle"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="performOperation:" destination="-1" eventType="touchUpInside" id="dke-ex-Oyg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="SVU-wZ-35M">
+                            <rect key="frame" x="0.0" y="243.5" width="342" height="75"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b6-ot-5iO" userLabel="Number 4">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="p2B-Re-i57"/>
+                                        <constraint firstAttribute="width" constant="75" id="zbl-5q-JDH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="4">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="wv3-eg-URO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWm-Yu-BSG" userLabel="Number 5">
+                                    <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="Ll5-6q-DUc"/>
+                                        <constraint firstAttribute="width" constant="75" id="OJX-nx-GWC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="5">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="rRS-rg-sJ8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-t4-R2a" userLabel="Number 6">
+                                    <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="X6L-7Q-Y91"/>
+                                        <constraint firstAttribute="height" constant="75" id="wN9-wB-h83"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="6">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="jz5-9T-6oF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od8-RA-0ZA" userLabel="Minus">
+                                    <rect key="frame" x="267" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="O6R-j8-bus"/>
+                                        <constraint firstAttribute="width" constant="75" id="bCE-TD-fEW"/>
+                                    </constraints>
+                                    <state key="normal" title="" backgroundImage="Minus 3"/>
+                                    <connections>
+                                        <action selector="performOperation:" destination="-1" eventType="touchUpInside" id="O7x-op-YcF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="nRw-CE-KF0">
+                            <rect key="frame" x="0.0" y="332.5" width="342" height="75"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kt6-Mk-sfC" userLabel="Number 1">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="KHN-7a-4dZ"/>
+                                        <constraint firstAttribute="width" constant="75" id="Qtf-J2-ngt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="7KL-Ce-oFa"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqp-sF-ghA" userLabel="Number 2">
+                                    <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="5yN-ry-2Sy"/>
+                                        <constraint firstAttribute="height" constant="75" id="dNF-Cf-a6v"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="2">
+                                        <color key="titleColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="J5T-Mt-UTm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIT-Li-RHu" userLabel="Number 3">
+                                    <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="8DT-rW-uoi"/>
+                                        <constraint firstAttribute="height" constant="75" id="xLe-nC-JXT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title="3">
+                                        <color key="titleColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="dEu-He-bqn"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5C-gb-LhX" userLabel="Plus Btn">
+                                    <rect key="frame" x="267" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="7If-a4-Sas"/>
+                                        <constraint firstAttribute="width" constant="75" id="Vrq-0v-qIp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                    <state key="normal" backgroundImage="Plus 2">
+                                        <color key="titleColor" red="0.20418021080000001" green="0.25115582349999999" blue="0.33173489569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="performOperation:" destination="-1" eventType="touchUpInside" id="0Tb-yN-mzn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-5d-xgB">
+                            <rect key="frame" x="0.0" y="421.5" width="342" height="75"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xx-63-MNO" userLabel="Number 0">
+                                    <rect key="frame" x="0.0" y="0.0" width="164" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="164" id="ID7-JC-GIf"/>
+                                        <constraint firstAttribute="height" constant="75" id="wUV-CM-oW5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="44"/>
+                                    <state key="normal" title="   0">
+                                        <color key="titleColor" red="0.96049326660000001" green="0.88982260229999999" blue="0.74601310489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="s1d-fR-Vop"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztb-gE-pn7" userLabel="Dot">
+                                    <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.18039215689999999" green="0.21960784310000001" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="f1O-My-t88"/>
+                                        <constraint firstAttribute="width" constant="75" id="fRj-JG-WxJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="30"/>
+                                    <state key="normal" title=".">
+                                        <color key="titleColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.72631593309999998" alpha="0.95999999999999996" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numButtonsPressed:" destination="-1" eventType="touchUpInside" id="OcQ-wM-rpj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkA-Of-fYN" userLabel="Equal">
+                                    <rect key="frame" x="267" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.89019607840000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="ld1-ym-h8w"/>
+                                        <constraint firstAttribute="width" constant="75" id="wa5-65-Fh4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                    <state key="normal" backgroundImage="Equal 3">
+                                        <color key="titleColor" red="0.20418021080000001" green="0.25115582349999999" blue="0.33173489569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="performOperation:" destination="-1" eventType="touchUpInside" id="FOT-s2-9sK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bzf-7c-SMs" firstAttribute="top" secondItem="tdW-Ak-aKM" secondAttribute="bottom" constant="14" id="Fec-WL-5si"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.047058823530000002" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zxw-zO-cKh" firstAttribute="centerX" secondItem="eki-vH-vNf" secondAttribute="centerX" id="YjD-TG-Jyp"/>
+                <constraint firstItem="Zxe-3j-Fer" firstAttribute="bottom" secondItem="Zxw-zO-cKh" secondAttribute="bottom" constant="18" id="wdF-Zf-TyN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Zxe-3j-Fer"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="- 3" width="75" height="75"/>
+        <image name="- 4" width="75" height="75"/>
+        <image name="Div 2" width="75" height="75"/>
+        <image name="Equal 3" width="75" height="75"/>
+        <image name="Minus 3" width="75" height="75"/>
+        <image name="Mul 2" width="75" height="75"/>
+        <image name="Plus 2" width="75" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FileCollectionViewCell" id="gTV-IL-0wX" customClass="FileCollectionViewCell" customModule="SecretVault" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fhg-Vq-H8f">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="133.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Fhg-Vq-H8f" secondAttribute="height" multiplier="87:68" id="u4v-95-kpl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtU-Cd-Q1v">
+                        <rect key="frame" x="15" y="141.5" width="46.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmc-NX-hY4">
+                        <rect key="frame" x="128.5" y="91.5" width="39.5" height="39"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-gn-jhb">
+                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="39"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rmc-NX-hY4" secondAttribute="height" multiplier="1:1" id="HpJ-YI-bHp"/>
+                            <constraint firstAttribute="bottom" secondItem="hZg-gn-jhb" secondAttribute="bottom" id="Msi-Y4-0pk"/>
+                            <constraint firstItem="hZg-gn-jhb" firstAttribute="leading" secondItem="Rmc-NX-hY4" secondAttribute="leading" id="Q1V-i4-zSk"/>
+                            <constraint firstAttribute="trailing" secondItem="hZg-gn-jhb" secondAttribute="trailing" id="b6s-Q6-wKr"/>
+                            <constraint firstItem="hZg-gn-jhb" firstAttribute="top" secondItem="Rmc-NX-hY4" secondAttribute="top" id="lTS-GV-S1d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Fhg-Vq-H8f" secondAttribute="trailing" id="2KS-qm-ZHZ"/>
+                <constraint firstItem="Fhg-Vq-H8f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9tY-dL-BJ9"/>
+                <constraint firstItem="Rmc-NX-hY4" firstAttribute="width" secondItem="Fhg-Vq-H8f" secondAttribute="width" multiplier="20:87" id="Fgw-hN-dfp"/>
+                <constraint firstItem="Rmc-NX-hY4" firstAttribute="bottom" secondItem="Fhg-Vq-H8f" secondAttribute="bottom" constant="-3" id="HsH-gL-mxx"/>
+                <constraint firstItem="Rmc-NX-hY4" firstAttribute="trailing" secondItem="Fhg-Vq-H8f" secondAttribute="trailing" constant="-3" id="RzG-du-xHE"/>
+                <constraint firstItem="dtU-Cd-Q1v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="YSd-Op-HaW"/>
+                <constraint firstItem="dtU-Cd-Q1v" firstAttribute="top" secondItem="Fhg-Vq-H8f" secondAttribute="bottom" constant="8" id="cwW-Lq-UJE"/>
+                <constraint firstItem="Fhg-Vq-H8f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qQY-bb-Ov0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="171" height="190"/>
+            <connections>
+                <outlet property="imgCheck" destination="hZg-gn-jhb" id="kRL-bn-oAJ"/>
+                <outlet property="imgFolder" destination="Fhg-Vq-H8f" id="jym-qg-hHk"/>
+                <outlet property="lblNameFolder" destination="dtU-Cd-Q1v" id="RTA-nR-aJa"/>
+                <outlet property="viewCheck" destination="Rmc-NX-hY4" id="WDR-dJ-7Vj"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
