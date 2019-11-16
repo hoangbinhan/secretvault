@@ -1,6 +1,11 @@
 # secretvault
 Các công nghệ phần mềm mới
 
+Để chạy được project ta cần cài đặt cocoapod và pod install project:
+	Bước 1: mở Terminal và chạy lệnh "sudo gem install cocoapods"
+	Bước 2: nháy phải vào thư mục của project và chọn vào "New Terminal Tab at Folder" và nhập lệnh "pod install" 
+
+
 Cấu trúc file trong thư mục SecrecVault:
 	Base: Nơi lưu trữ nhưng khai báo định dạng lại các UI component
 	Constant: Nơi lưu trữ khai báo các chuỗi sẽ đặt như mặc định (hằng) trong project như Key, thông báo lỗi,...
